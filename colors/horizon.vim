@@ -151,6 +151,7 @@ hi jsFlowArgumentDef guifg=#fab38e ctermfg=209 guibg=NONE ctermbg=NONE gui=NONE 
 hi jsFlowType guifg=#fab38e ctermfg=44 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi jsFlowObject guifg=#d5d8da ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi jsFlowTypeStatement guifg=#fab38e ctermfg=209 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link jsIdentifier Identifier
 hi link jsFlowMaybe Keyword
 hi link jsFlowReturn jsFlowType
 hi link jsFlowReturnObject jsFlowType
