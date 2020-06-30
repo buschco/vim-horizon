@@ -146,9 +146,37 @@ hi! link CtrlPMatch Title
 hi! link CtrlPMode2 StatusLine
 hi! link deniteMatched Normal
 hi! link deniteMatchedChar Title
-hi! link jsFlowMaybe Normal
-hi! link jsFlowObject Normal
-hi! link jsFlowType PreProc
+hi jsFlowDefinition guifg=#fab38e ctermfg=209 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsFlowArgumentDef guifg=#fab38e ctermfg=209 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsFlowType guifg=#fab38e ctermfg=44 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsFlowObject guifg=#d5d8da ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsFlowTypeStatement guifg=#fab38e ctermfg=209 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link jsFlowMaybe Keyword
+hi link jsFlowReturn jsFlowType
+hi link jsFlowReturnObject jsFlowType
+hi link jsFlowReturnArray jsFlowType
+hi link jsFlowReturnParens jsFlowType
+hi link jsFlowReturnArrow jsFlowType
+hi link jsFlowReturnKeyword jsFlowType
+hi link jsFlowReturnMaybe jsFlowType
+hi link jsFlowReturnGroup jsFlowType
+hi link jsFlowReturnOrOp jsFlowType
+hi link jsFlowWildcardReturn jsFlowType
+hi link jsFlowTypeofReturn jsFlowType
+hi link jsFlowArray jsFlowArgumentDef
+hi link jsFlowExactObject jsFlowArgumentDef
+hi jsFlowParens guifg=#d5d8da ctermfg=254 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link jsFlowNoise jsFlowType
+hi jsFlowTypeof guifg=#b877db ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link jsFlowTypeCustom jsFlowType
+hi jsFlowGeneric guifg=#fab38e ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link jsFlowObjectGeneric jsFlowGeneric
+hi link jsFlowArrow Function
+hi link jsFlowObjectKey jsVariableDef
+hi link jsFlowOrOperator jsFlowType
+hi link jsFlowImportType jsFlowType
+hi link jsFlowWildcard jsFlowType
+hi link jsFlowParenAnnotation jsFlowType
 hi! link graphqlName Normal
 hi! link graphqlOperator Normal
 hi! link jsArrowFunction Operator
