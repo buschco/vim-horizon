@@ -46,16 +46,18 @@ hi! Function cterm=NONE gui=NONE ctermfg=37 guifg=#25b0bc
 hi! Identifier cterm=italic gui=italic ctermfg=203 guifg=#e95678
 hi! Statement cterm=bold gui=bold ctermfg=171 guifg=#b877db
 hi! Include cterm=NONE gui=NONE ctermfg=171 guifg=#b877db
+hi! Keyword cterm=NONE gui=NONE ctermfg=171 guifg=#b877db
 hi! LineNr cterm=NONE gui=NONE ctermbg=233 ctermfg=239 guibg=#1c1e26 guifg=#6c6f93
 hi! MatchParen cterm=NONE gui=NONE ctermbg=237 ctermfg=255 guibg=#3e445e guifg=#ffffff
 hi! MoreMsg cterm=NONE gui=NONE ctermfg=48 guifg=#09f7a0
 hi! Normal cterm=NONE gui=NONE ctermbg=233 ctermfg=252 guibg=#1c1e26 guifg=#d5d8da
 hi! Operator cterm=NONE gui=NONE ctermfg=37 guifg=#25b0bc
-hi! Pmenu cterm=NONE gui=NONE ctermbg=NONE ctermfg=NONE guifg=#d5d8da
+hi! Pmenu cterm=NONE gui=NONE ctermbg=NONE ctermfg=NONE guifg=#d5d8da guibg=#272c42
+hi! NormalFloat cterm=NONE gui=NONE ctermbg=NONE ctermfg=NONE guifg=#d5d8da guibg=#272c42
 hi! PmenuSbar cterm=NONE gui=NONE ctermbg=236 guibg=#3d425b
 hi! PmenuSel cterm=NONE gui=NONE ctermbg=240 ctermfg=255 guibg=#5b6389 guifg=#eff0f4
 hi! PmenuThumb cterm=NONE gui=NONE ctermbg=233 guibg=#1c1e26
-hi! PreProc cterm=NONE gui=NONE ctermfg=150 guifg=#09f7a0
+hi! PreProc cterm=NONE gui=NONE ctermfg=150 guifg=#b877db
 hi! Question cterm=NONE gui=NONE ctermfg=150 guifg=#09f7a0
 hi! QuickFixLine cterm=NONE gui=NONE ctermbg=233 ctermfg=252 guibg=#272c42 guifg=#1c1e26
 hi! Search cterm=NONE gui=NONE ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
@@ -146,12 +148,14 @@ hi! link CtrlPMatch Title
 hi! link CtrlPMode2 StatusLine
 hi! link deniteMatched Normal
 hi! link deniteMatchedChar Title
-hi jsFlowDefinition guifg=#fab38e ctermfg=209 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi jsFlowArgumentDef guifg=#fab38e ctermfg=209 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi jsFlowType guifg=#fab38e ctermfg=44 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi jsFlowObject guifg=#d5d8da ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi jsFlowTypeStatement guifg=#fab38e ctermfg=209 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link jsFlowType String
 hi link jsIdentifier Identifier
+hi link jsBraces Normal
+hi link jsParens Normal
+hi link jsModuleAsterisk Constant
+hi link jsThis Type
+hi link jsVariableType Keyword
+hi link jsPrivateIdentifier Identifier
 hi link jsFlowMaybe Keyword
 hi link jsFlowReturn jsFlowType
 hi link jsFlowReturnObject jsFlowType
@@ -164,23 +168,17 @@ hi link jsFlowReturnGroup jsFlowType
 hi link jsFlowReturnOrOp jsFlowType
 hi link jsFlowWildcardReturn jsFlowType
 hi link jsFlowTypeofReturn jsFlowType
-hi link jsFlowArray jsFlowArgumentDef
-hi link jsFlowExactObject jsFlowArgumentDef
-hi jsFlowParens guifg=#d5d8da ctermfg=254 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link jsFlowNoise jsFlowType
-hi jsFlowTypeof guifg=#b877db ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link jsFlowTypeCustom jsFlowType
-hi jsFlowGeneric guifg=#fab38e ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link jsFlowObjectGeneric jsFlowGeneric
+hi link jsFlowArray jsFlowType
+hi link jsFlowParens Normal
+hi link jsFlowTypeof Keyword
 hi link jsFlowArrow Function
-hi link jsFlowObjectKey jsVariableDef
 hi link jsFlowOrOperator jsFlowType
 hi link jsFlowImportType jsFlowType
 hi link jsFlowWildcard jsFlowType
 hi link jsFlowParenAnnotation jsFlowType
 hi! link graphqlName Normal
 hi! link graphqlOperator Normal
-hi! link jsArrowFunction Operator
+hi! link jsArrowFunction Function
 hi! link jsClassDefinition Normal
 hi! link jsClassFuncName Title
 hi! link jsExport Statement
