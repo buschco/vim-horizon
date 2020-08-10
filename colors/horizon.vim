@@ -44,6 +44,8 @@ hi! Folded cterm=NONE gui=NONE ctermbg=233 ctermfg=242 guibg=#1c1e26 guifg=#6c6f
 hi! FoldColumn cterm=NONE gui=NONE ctermbg=233 ctermfg=242 guibg=#1c1e26 guifg=#6c6f93
 hi! Function cterm=NONE gui=NONE ctermfg=37 guifg=#25b0bc
 hi! Identifier cterm=italic gui=italic ctermfg=203 guifg=#e95678
+hi! Character cterm=italic gui=italic ctermfg=203 guifg=#e95678
+hi! Label cterm=italic gui=italic ctermfg=203 guifg=#e95678
 hi! Statement cterm=bold gui=bold ctermfg=171 guifg=#b877db
 hi! Include cterm=NONE gui=NONE ctermfg=171 guifg=#b877db
 hi! Keyword cterm=NONE gui=NONE ctermfg=171 guifg=#b877db
@@ -62,7 +64,8 @@ hi! Question cterm=NONE gui=NONE ctermfg=150 guifg=#09f7a0
 hi! QuickFixLine cterm=NONE gui=NONE ctermbg=233 ctermfg=252 guibg=#272c42 guifg=#1c1e26
 hi! Search cterm=NONE gui=NONE ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
 hi! SignColumn cterm=NONE gui=NONE ctermbg=233 ctermfg=242 guibg=#1c1e26 guifg=#6c6f93
-hi! Special cterm=NONE gui=NONE ctermfg=203 guifg=#e95678
+hi! Special cterm=NONE gui=NONE ctermfg=171 guifg=#b877db
+" hi! Special cterm=NONE gui=NONE ctermfg=203 guifg=#e95678
 hi! SpellBad cterm=undercurl gui=undercurl ctermbg=95 ctermfg=252 guisp=#eC6a88
 hi! SpellCap cterm=undercurl gui=undercurl ctermbg=24 ctermfg=252 guisp=#25b0bc
 hi! SpellLocal cterm=undercurl gui=undercurl ctermbg=23 ctermfg=203 guisp=#e95678
@@ -71,12 +74,12 @@ hi! StatusLine cterm=reverse gui=reverse ctermbg=234 ctermfg=245 guibg=#17171b g
 hi! StatusLineTerm cterm=reverse gui=reverse ctermbg=234 ctermfg=245 guibg=#17171b guifg=#818596
 hi! StatusLineNC cterm=reverse gui=reverse ctermbg=237 ctermfg=233 guibg=#3e445e guifg=#0f1117
 hi! StatusLineTermNC cterm=reverse gui=reverse ctermbg=237 ctermfg=233 guibg=#3e445e guifg=#0f1117
-hi! StorageClass cterm=italic gui=italic ctermfg=37 guifg=#25b0bc
+hi! StorageClass cterm=NONE gui=NONE ctermfg=171 guifg=#b877db
 hi! String cterm=NONE gui=NONE ctermfg=209 guifg=#fab795
 hi! Structure cterm=NONE gui=NONE ctermfg=37 guifg=#25b0bc
 hi! TabLine cterm=NONE gui=NONE ctermbg=245 ctermfg=234 guibg=#818596 guifg=#17171b
 hi! TabLineFill cterm=reverse gui=reverse ctermbg=234 ctermfg=245 guibg=#17171b guifg=#818596
-hi! TabLineSel cterm=NONE gui=NONE ctermbg=234 ctermfg=247 guibg=#e95678 guifg=#9a9ca5
+hi! TabLineSel cterm=NONE gui=NONE ctermbg=234 ctermfg=247 guibg=#e95678 guifg=#272c42
 hi! Title cterm=bold gui=bold ctermfg=37 guifg=#25b0bc
 hi! Todo cterm=inverse,bold gui=inverse,bold ctermbg=59 ctermfg=48 guibg=#45493e guifg=#09f7a0
 hi! Type cterm=NONE gui=NONE ctermfg=209 guifg=#fab795
@@ -148,34 +151,34 @@ hi! link CtrlPMatch Title
 hi! link CtrlPMode2 StatusLine
 hi! link deniteMatched Normal
 hi! link deniteMatchedChar Title
-hi link jsFlowType String
-hi link jsIdentifier Identifier
-hi link jsBraces Normal
-hi link jsParens Normal
-hi link jsModuleAsterisk Constant
-hi link jsThis Type
-hi link jsVariableType Keyword
-hi link jsPrivateIdentifier Identifier
-hi link jsFlowMaybe Keyword
-hi link jsFlowReturn jsFlowType
-hi link jsFlowReturnObject jsFlowType
-hi link jsFlowReturnArray jsFlowType
-hi link jsFlowReturnParens jsFlowType
-hi link jsFlowReturnArrow jsFlowType
-hi link jsFlowReturnKeyword jsFlowType
-hi link jsFlowReturnMaybe jsFlowType
-hi link jsFlowReturnGroup jsFlowType
-hi link jsFlowReturnOrOp jsFlowType
-hi link jsFlowWildcardReturn jsFlowType
-hi link jsFlowTypeofReturn jsFlowType
-hi link jsFlowArray jsFlowType
-hi link jsFlowParens Normal
-hi link jsFlowTypeof Keyword
-hi link jsFlowArrow Function
-hi link jsFlowOrOperator jsFlowType
-hi link jsFlowImportType jsFlowType
-hi link jsFlowWildcard jsFlowType
-hi link jsFlowParenAnnotation jsFlowType
+hi!link jsFlowType String
+hi! link jsIdentifier Identifier
+hi! link jsBraces Normal
+hi! link jsParens Normal
+hi! link jsModuleAsterisk Constant
+hi! link jsThis Type
+hi! link jsVariableType Keyword
+hi! link jsPrivateIdentifier Identifier
+hi! link jsFlowMaybe Keyword
+hi! link jsFlowReturn jsFlowType
+hi! link jsFlowReturnObject jsFlowType
+hi! link jsFlowReturnArray jsFlowType
+hi! link jsFlowReturnParens jsFlowType
+hi! link jsFlowReturnArrow jsFlowType
+hi! link jsFlowReturnKeyword jsFlowType
+hi! link jsFlowReturnMaybe jsFlowType
+hi! link jsFlowReturnGroup jsFlowType
+hi! link jsFlowReturnOrOp jsFlowType
+hi! link jsFlowWildcardReturn jsFlowType
+hi! link jsFlowTypeofReturn jsFlowType
+hi! link jsFlowArray jsFlowType
+hi! link jsFlowParens Normal
+hi! link jsFlowTypeof Keyword
+hi! link jsFlowArrow Function
+hi! link jsFlowOrOperator jsFlowType
+hi! link jsFlowImportType jsFlowType
+hi! link jsFlowWildcard jsFlowType
+hi! link jsFlowParenAnnotation jsFlowType
 hi! link graphqlName Normal
 hi! link graphqlOperator Normal
 hi! link jsArrowFunction Function
@@ -220,16 +223,32 @@ hi! link StartifySlash Comment
 hi! link StartifySpecial Normal
 hi! link svssBraces Delimiter
 hi! link swiftIdentifier Normal
-hi! link typescriptAjaxMethods Normal
+
+hi! link jsIdentifierProp Identifier
+hi! link typescriptParameters jsFlowType
 hi! link typescriptBraces Normal
-hi! link typescriptEndColons Normal
+" hi! link typescriptEndColons Normal
 hi! link typescriptFuncKeyword Statement
 hi! link typescriptGlobalObjects Statement
-hi! link typescriptHtmlElemProperties Normal
-hi! link typescriptIdentifier Statement
-hi! link typescriptMessage Normal
+" hi! link typescriptIdentifier jsIdentifier 
+" hi! link typescriptMessage Normal
 hi! link typescriptNull Constant
-hi! link typescriptParens Normal
+" hi! link typescriptParens Normal
+" hi! link typescriptFuncArg Identifier
+" hi! link typescriptArrowFuncArg Identifier
+" hi! link typescriptIdentifierName Identifier
+hi! link typescriptVariable Keyword 
+hi! link typescriptVariableDeclaration Identifier 
+hi! link typescriptCall Identifier 
+hi! link typescriptBlock Identifier 
+hi! link typescriptTypeReference jsFlowType 
+hi! link typescriptStringMethod Function 
+hi! link typescriptReserved Keyword 
+hi! link typescriptSpecial Keyword
+hi! link typescriptConditionalParen Identifier 
+hi! link typescriptArray Identifier
+hi! link typescriptArrayMethod Function 
+hi! link typescriptFuncCallArg Identifier
 
 if has('nvim')
   let g:terminal_color_0 = '#1c1e26'
