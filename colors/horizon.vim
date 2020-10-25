@@ -249,6 +249,15 @@ hi! link typescriptConditionalParen Identifier
 hi! link typescriptArray Identifier
 hi! link typescriptArrayMethod Function 
 hi! link typescriptFuncCallArg Identifier
+hi! link typescriptArrowFunc Normal
+hi! link typescriptTemplateSB Special
+hi! link typescriptTemplate String 
+hi! link typescriptTemplateSubstitution Identifier 
+hi! link typescriptComputedPropertyName Identifier 
+hi! link typescriptObjectLiteral Identifier 
+hi! link typescriptDestructureVariable Identifier 
+
+
 
 if has('nvim')
   let g:terminal_color_0 = '#1c1e26'
