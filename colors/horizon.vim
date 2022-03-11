@@ -52,7 +52,7 @@ hi! Keyword cterm=NONE gui=NONE ctermfg=171 guifg=#b877db
 hi! LineNr cterm=NONE gui=NONE ctermbg=233 ctermfg=239 guibg=#1c1e26 guifg=#6c6f93
 hi! MatchParen cterm=NONE gui=NONE ctermbg=237 ctermfg=255 guibg=#3e445e guifg=#ffffff
 hi! MoreMsg cterm=NONE gui=NONE ctermfg=48 guifg=#09f7a0
-hi! Normal cterm=NONE gui=NONE ctermbg=233 ctermfg=252 guibg=#1c1e26 guifg=#d5d8da
+hi! Normal cterm=NONE gui=italic ctermfg=203 guifg=#e95678
 hi! Operator cterm=NONE gui=NONE ctermfg=37 guifg=#25b0bc
 hi! Pmenu cterm=NONE gui=NONE ctermbg=NONE ctermfg=NONE guifg=#d5d8da guibg=#272c42
 hi! NormalFloat cterm=NONE gui=NONE ctermbg=NONE ctermfg=NONE guifg=#d5d8da guibg=#272c42
