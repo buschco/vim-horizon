@@ -43,6 +43,8 @@ hi! link Type String
 hi! QuickScopePrimary  cterm=NONE gui=NONE ctermfg=48 guifg=#09f7a0
 hi! link QuickScopeSecondary QuickScopePrimary
 
+hi! link CocHintSign Comment
+
 "
 hi! SpellBad cterm=undercurl gui=undercurl ctermbg=95 ctermfg=252 guisp=#eC6a88
 hi! SpellCap cterm=undercurl gui=undercurl ctermbg=24 ctermfg=252 guisp=#25b0bc
@@ -152,7 +154,7 @@ hi! link TSKeyword Keyword
 hi! link TSKeywordFunction Keyword 
 hi! link TSKeywordOperator Keyword 
 hi! link TSKeywordReturn Statement 
-hi! link TSLabel String
+hi! link TSLabel Identifier 
 
 hi! link TSNamespace Keyword 
 
