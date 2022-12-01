@@ -121,98 +121,97 @@ hi! GitGutterChangeDelete cterm=NONE gui=NONE ctermbg=233 ctermfg=109 guibg=#1c1
 hi! GitGutterDelete cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#1c1e26 guifg=#eC6a88
 
 
-hi! link TSAttribute Identifier 
-hi! link TSBoolean Constant
-hi! link TSCharacter String
-hi! link TSCharacterSpecial Keyword 
-hi! link TSComment Comment
-hi! link TSConditional Keyword
-hi! link TSConstant Identifier 
-hi! link TSConstBuiltin Constant
-hi! link TSConstMacro Keyword 
-hi! link TSConstructor Function 
+hi! link @attribute Identifier 
+hi! link @boolean Constant
+hi! link @character String
+hi! link @characterSpecial Keyword 
+hi! link @comment Comment
+hi! link @conditional Keyword
+hi! link @constant Identifier 
+hi! link @constBuiltin Constant
+hi! link @constMacro Keyword 
+hi! link @constructor Function 
 
-hi! link TSDebug Normal
-hi! link TSDefine Normal
-hi! link TSError Error
-hi! link TSException Normal
+hi! link @debug Normal
+hi! link @define Normal
+hi! link @error Error
+hi! link @exception Normal
 
-hi! link TSField String
-hi! link TSFloat Constant
-hi! link TSNumber Constant
+hi! link @field String
+hi! link @float Constant
+hi! link @number Constant
 
-hi! link TSFunction Function 
-hi! link TSFunctionCall Normal
-hi! link TSMethod Function 
-hi! link TSMethodCall Normal
+hi! link @function Function 
+hi! link @functionCall Normal
+hi! link @method Function 
+hi! link @methodCall Normal
 
-hi! link TSFuncBuiltin Normal
-hi! link TSFuncMacro Normal
+hi! link @funcBuiltin Normal
+hi! link @funcMacro Normal
 
-hi! link TSInclude Keyword 
-hi! link TSKeyword Keyword 
-hi! link TSKeywordFunction Keyword 
-hi! link TSKeywordOperator Keyword 
-hi! link TSKeywordReturn Statement 
-hi! link TSLabel Identifier 
+hi! link @include Keyword 
+hi! link @keyword Keyword 
+hi! link @keywordFunction Keyword 
+hi! link @keywordOperator Keyword 
+hi! link @keywordReturn Statement 
+hi! link @label Identifier 
 
-hi! link TSNamespace Keyword 
+hi! link @namespace Keyword 
 
-hi! link TSNone Normal
+hi! link @none Normal
 
-hi! link TSOperator Delimiter
+hi! link @operator Delimiter
 
-hi! link TSParameter Identifier 
-hi! link TSParameterReference Identifier 
-hi! link TSPreProc Comment
+hi! link @parameter Identifier 
+hi! link @parameterReference Identifier 
+hi! link @preProc Comment
 
-hi! link TSProperty Identifier 
+hi! link @punctuation.delimiter Delimiter
+hi! link @punctuation.bracket Normal
+hi! link @punctuation.special Keyword 
 
-hi! link TSPunctDelimiter Delimiter
-hi! link TSPunctBracket Normal
-hi! link TSPunctSpecial Keyword 
+hi! link @repeat Keyword 
+hi! link @storageClass Keyword 
+hi! link @string String
+hi! link @stringRegex String
+hi! link @stringEscape Keyword 
+hi! link @stringSpecial Keyword 
+hi! link @symbol Keyword 
 
-hi! link TSRepeat Keyword 
-hi! link TSStorageClass Keyword 
-hi! link TSString String
-hi! link TSStringRegex String
-hi! link TSStringEscape Keyword 
-hi! link TSStringSpecial Keyword 
-hi! link TSSymbol Keyword 
+hi! link @tag Function 
+hi! link @property Identifier 
+hi! link @tag.attribute String
 
-hi! link TSTag Function 
-hi! link TSTagAttribute String
+hi! link @tagDelimiter Comment
+hi! link @text String
 
-hi! link TSTagDelimiter Comment
-hi! link TSText String
+hi! link @strong Normal
+hi! link @emphasis Normal
+hi! link @underline Normal
+hi! link @strike Normal
 
-hi! link TSStrong Normal
-hi! link TSEmphasis Normal
-hi! link TSUnderline Normal
-hi! link TSStrike Normal
+hi! link @title String
+hi! link @literal String
 
-hi! link TSTitle String
-hi! link TSLiteral String
+hi! link @uRI Operator 
+hi! link @math String
 
-hi! link TSURI Operator 
-hi! link TSMath String
+hi! link @textReference Normal
+hi! link @environment String
+hi! link @environmentName String
 
-hi! link TSTextReference Normal
-hi! link TSEnvironment String
-hi! link TSEnvironmentName String
+hi! link @note Comment
+hi! link @warning WarningMsg
+hi! link @danger WarningMsg
+hi! link @todo Comment
 
-hi! link TSNote Comment
-hi! link TSWarning WarningMsg
-hi! link TSDanger WarningMsg
-hi! link TSTodo Comment
+hi! link @type Type  
+hi! link @typeBuiltin Type  
+hi! link @typeQualifier Keyword 
+hi! link @typeDefinition Type  
 
-hi! link TSType Type  
-hi! link TSTypeBuiltin Type  
-hi! link TSTypeQualifier Keyword 
-hi! link TSTypeDefinition Type  
-
-hi! link TSVariable Identifier 
-hi! link TSVariableBuiltin Constant
+hi! link @variable Identifier 
+hi! link @variableBuiltin Constant
 
 
 if has('nvim')
