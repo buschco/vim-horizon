@@ -128,7 +128,7 @@ hi! link @characterSpecial Keyword
 hi! link @comment Comment
 hi! link @conditional Keyword
 hi! link @constant Identifier 
-hi! link @constBuiltin Constant
+hi! link @constant.builtin Constant
 hi! link @constMacro Keyword 
 hi! link @constructor Function 
 
@@ -146,7 +146,7 @@ hi! link @functionCall Normal
 hi! link @method Function 
 hi! link @methodCall Normal
 
-hi! link @funcBuiltin Normal
+hi! link @function.builtin Normal
 hi! link @funcMacro Normal
 
 hi! link @include Keyword 
@@ -206,12 +206,12 @@ hi! link @danger WarningMsg
 hi! link @todo Comment
 
 hi! link @type Type  
-hi! link @typeBuiltin Type  
+hi! link @type.builtin Type  
 hi! link @typeQualifier Keyword 
 hi! link @typeDefinition Type  
 
 hi! link @variable Identifier 
-hi! link @variableBuiltin Constant
+hi! link @variable.builtin Constant
 
 
 if has('nvim')
