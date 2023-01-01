@@ -30,6 +30,7 @@ hi! link Directory Identifier
 hi! link Character Identifier 
 hi! link Label Identifier 
 
+hi! Invisible  cterm=NONE gui=NONE ctermbg=233 ctermfg=242 guibg=#1c1e26 guifg=#1c1e26 
 hi! Normal cterm=NONE gui=NONE ctermbg=233 ctermfg=252 guibg=#1c1e26 guifg=#d5d8da
 hi! Error cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#1c1e26 guifg=#eC6a88
 hi! Comment cterm=italic gui=italic ctermfg=242 guifg=#6c6f93
@@ -212,6 +213,9 @@ hi! link @typeDefinition Type
 
 hi! link @variable Identifier 
 hi! link @variable.builtin Constant
+hi! link TelescopePromptCounter Normal
+hi! link TelescopeBorder Comment
+hi! link TelescopeMatching Search  
 
 
 if has('nvim')
