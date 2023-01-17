@@ -136,7 +136,7 @@ hi! link @constructor Function
 hi! link @debug Normal
 hi! link @define Normal
 hi! link @error Error
-hi! link @exception Normal
+hi! link @exception Special
 
 hi! link @field String
 hi! link @float Constant
