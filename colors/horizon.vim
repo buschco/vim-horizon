@@ -38,6 +38,7 @@ hi! CocFadeOut cterm=NONE gui=NONE ctermbg=59 ctermfg=48 guifg=#6c6f93
 hi! Constant cterm=NONE gui=NONE ctermfg=209 guifg=#f09483
 hi! Delimiter cterm=NONE gui=NONE ctermfg=44 guifg=#21bfc2
 hi! String cterm=NONE gui=NONE ctermfg=209 guifg=#fab795
+hi! SecondarySpecial cterm=NONE gui=NONE ctermfg=48 guifg=#09f7a0
 hi! link Type String
 
 " https://github.com/unblevable/quick-scope
@@ -121,7 +122,34 @@ hi! GitGutterChange cterm=NONE gui=NONE ctermbg=233 ctermfg=109 guibg=#1c1e26 gu
 hi! GitGutterChangeDelete cterm=NONE gui=NONE ctermbg=233 ctermfg=109 guibg=#1c1e26 guifg=#e95678
 hi! GitGutterDelete cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#1c1e26 guifg=#eC6a88
 
+hi! link CmpItemKindText Comment
+hi! link CmpItemKindSnippet SecondarySpecial
+hi! link CmpItemKindFunction Function 
+hi! link CmpItemKindConstructor  Function 
 
+hi! link CmpItemKindField String
+hi! link CmpItemKindProperty String
+hi! link CmpItemKindEnumMember String
+hi! link CmpItemKindColor String
+hi! link CmpItemKindUnit String
+
+hi! link CmpItemKindEnum Identifier
+hi! link CmpItemKindVariable Identifier
+hi! link CmpItemKindValue Identifier
+hi! link CmpItemKindTypeParameter Special
+hi! link CmpItemKindConstant Special
+hi! link CmpItemKindClass Special
+hi! link CmpItemKindInterface Special
+hi! link CmpItemKindReference Special
+hi! link CmpItemKindModule Special
+hi! link CmpItemKindOperator Special
+hi! link CmpItemKindKeyword Special
+hi! link CmpItemKindFile Special
+hi! link CmpItemKindFolder Special
+hi! link CmpItemKindStruct Special
+hi! link CmpItemKindEvent Special
+
+hi! link @identifier  Identifier 
 hi! link @attribute Identifier 
 hi! link @boolean Constant
 hi! link @character String
