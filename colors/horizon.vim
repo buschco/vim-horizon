@@ -41,6 +41,12 @@ hi! String cterm=NONE gui=NONE ctermfg=209 guifg=#fab795
 hi! SecondarySpecial cterm=NONE gui=NONE ctermfg=48 guifg=#09f7a0
 hi! link Type String
 
+hi! Bold cterm=bold gui=bold ctermfg=37 guifg=#d5d8da
+hi! Italic cterm=italic gui=italic ctermfg=37 guifg=#d5d8da
+hi! Link cterm=italic gui=italic ctermfg=37 guifg=#25b0bc
+hi! Strike cterm=strikethrough gui=strikethrough ctermfg=37 guifg=#25b0bc
+" hi! Function cterm=gui=italic ctermfg=37 guifg=#25b0bc
+
 " https://github.com/unblevable/quick-scope
 hi! QuickScopePrimary  cterm=NONE gui=NONE ctermfg=48 guifg=#09f7a0
 hi! link QuickScopeSecondary QuickScopePrimary
@@ -166,8 +172,8 @@ hi! link @define Normal
 hi! link @error Error
 hi! link @exception Special
 
-hi! link @field String
-hi! link @float Constant
+hi! link @variable.member String
+hi! link @number.float Constant
 hi! link @number Constant
 
 hi! link @function Function 
@@ -185,13 +191,13 @@ hi! link @keywordOperator Keyword
 hi! link @keywordReturn Statement 
 hi! link @label Identifier 
 
-hi! link @namespace Keyword 
+hi! link @module Keyword 
 
 hi! link @none Normal
 
 hi! link @operator Delimiter
 
-hi! link @parameter Identifier 
+hi! link @variable.parameter Identifier 
 hi! link @parameterReference Identifier 
 hi! link @preProc Comment
 
@@ -202,10 +208,10 @@ hi! link @punctuation.special Keyword
 hi! link @repeat Keyword 
 hi! link @storageClass Keyword 
 hi! link @string String
-hi! link @stringRegex String
+hi! link @string.regexp String
 hi! link @stringEscape Keyword 
 hi! link @stringSpecial Keyword 
-hi! link @symbol Keyword 
+hi! link @string.special.symbol Keyword 
 
 hi! link @tag Function 
 hi! link @property Identifier 
@@ -214,16 +220,17 @@ hi! link @tag.attribute String
 hi! link @tagDelimiter Comment
 hi! link @text String
 
-hi! link @strong Normal
-hi! link @emphasis Normal
-hi! link @underline Normal
-hi! link @strike Normal
+hi! link @markup.strong Bold
+hi! link @markup.italic Italic
+hi! link @markup.link Link
+hi! link @markup.strikethrough Strike
+hi! link @markup.heading Title
+hi! link @markup.link.url Link
+hi! link @markup.link.label Link
+hi! link @markup.raw String
+hi! link @markup.list Special
 
-hi! link @title String
-hi! link @literal String
-
-hi! link @uRI Operator 
-hi! link @math String
+hi! link @markup.math String
 
 hi! link @textReference Normal
 hi! link @environment String
