@@ -30,7 +30,7 @@ hi! link Directory Identifier
 hi! link Character Identifier 
 hi! link Label Identifier 
 
-hi! Invisible  cterm=NONE gui=NONE ctermbg=233 ctermfg=242 guibg=#1c1e26 guifg=#1c1e26 
+hi! Invisible cterm=NONE gui=NONE ctermbg=233 ctermfg=242 guibg=#1c1e26 guifg=#1c1e26 
 hi! Normal cterm=NONE gui=NONE ctermbg=233 ctermfg=252 guibg=#1c1e26 guifg=#d5d8da
 hi! Error cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#1c1e26 guifg=#eC6a88
 hi! Comment cterm=italic gui=italic ctermfg=242 guifg=#6c6f93
@@ -72,9 +72,12 @@ hi! DiffChange cterm=NONE gui=NONE ctermbg=23 ctermfg=241 guibg=#384851 guifg=#b
 hi! DiffDelete cterm=NONE gui=NONE ctermbg=52 ctermfg=167 guibg=#53343b guifg=#ceb0b6
 hi! DiffText cterm=NONE gui=NONE ctermbg=24 ctermfg=233 guibg=#5b7881 guifg=#1c1e26
 
-hi! Error cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#1c1e26 guifg=#eC6a88
-hi! ErrorMsg cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#1c1e26 guifg=#ec6a88
-hi! WarningMsg cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#1c1e26 guifg=#eC6a88
+hi! Error cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#1c1e26 guifg=#ff0000
+hi! link DiagnosticError Error
+hi! DiagnosticFloatingError cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#272c42 guifg=#ff0000
+hi! DiagnosticWarn cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#1c1e26  guifg=#efb191
+hi! DiagnosticFloatingWarn cterm=NONE gui=NONE ctermbg=233 ctermfg=203 guibg=#272c42 guifg=#efb191
+
 hi! EndOfBuffer cterm=NONE gui=NONE ctermbg=233 ctermfg=236 guibg=#1c1e26 guifg=#2e303e
 hi! NonText cterm=NONE gui=NONE ctermbg=233 ctermfg=233 guifg=#2e303e guibg=#1c1e26
 hi! SpecialKey cterm=NONE gui=NONE ctermbg=203 ctermfg=235 guibg=#e95678 guifg=#2e303e
@@ -172,7 +175,7 @@ hi! link @define Normal
 hi! link @error Error
 hi! link @exception Special
 
-hi! link @variable.member String
+hi! link @variable.member Identifier
 hi! link @number.float Constant
 hi! link @number Constant
 
