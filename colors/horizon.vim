@@ -106,9 +106,9 @@ hi! StatusLineTerm cterm=reverse gui=reverse ctermbg=234 ctermfg=245 guibg=#1717
 hi! StatusLineNC cterm=reverse gui=reverse ctermbg=237 ctermfg=233 guibg=#3e445e guifg=#0f1117
 hi! StatusLineTermNC cterm=reverse gui=reverse ctermbg=237 ctermfg=233 guibg=#3e445e guifg=#0f1117
 
-hi! TabLine cterm=NONE gui=NONE ctermbg=245 ctermfg=234 guibg=#818596 guifg=#17171b
-hi! TabLineFill cterm=reverse gui=reverse ctermbg=234 ctermfg=245 guibg=#17171b guifg=#818596
-hi! TabLineSel cterm=NONE gui=NONE ctermbg=234 ctermfg=247 guibg=#e95678 guifg=#272c42
+hi! link TabLine Normal
+hi! TabLineFill cterm=NONE gui=NONE ctermbg=233 guibg=#1c1e26
+hi! TabLineSel cterm=bold gui=bold ctermfg=240 ctermfg=255 guibg=#272c42 guifg=#eff0f4
 
 hi! Title cterm=bold gui=bold ctermfg=37 guifg=#25b0bc
 hi! Todo cterm=inverse,bold gui=inverse,bold ctermbg=59 ctermfg=48 guibg=#45493e guifg=#09f7a0
