@@ -99,7 +99,8 @@ hi! PmenuThumb cterm=NONE gui=NONE ctermbg=233 guibg=#1c1e26
 hi! Question cterm=NONE gui=NONE ctermfg=150 guifg=#09f7a0
 
 hi! QuickFixLine cterm=NONE gui=NONE ctermbg=233 ctermfg=252 guibg=#272c42 guifg=#1c1e26
-hi! Search cterm=NONE gui=NONE ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
+hi! Search cterm=NONE gui=NONE ctermbg=216 ctermfg=234 guibg=#6C6F93 guifg=#ffffff
+" hi! Search guifg=#88C0D0 guibg=#3B4252 ctermfg=6 ctermbg=0 gui=reverse term=reverse
 hi! SignColumn cterm=NONE gui=NONE ctermbg=233 ctermfg=242 guibg=#1c1e26 guifg=#6c6f93
 hi! StatusLine cterm=reverse gui=reverse ctermbg=234 ctermfg=245 guibg=#17171b guifg=#818596
 hi! StatusLineTerm cterm=reverse gui=reverse ctermbg=234 ctermfg=245 guibg=#17171b guifg=#818596
@@ -251,6 +252,7 @@ hi! link @typeDefinition Type
 
 hi! link @variable Identifier 
 hi! link @variable.builtin Constant
+" hi! TelescopeSelection guifg=#FFD700 guibg=#005f87 gui=bold
 hi! link TelescopePromptCounter Normal
 hi! link TelescopeBorder Comment
 hi! link TelescopeMatching Search  
